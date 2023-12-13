@@ -8,12 +8,13 @@ Hallo, wie wil er meewerken aan...
 """)
 
 df = pd.DataFrame({
-    'first column': [1, 2, 3, 4],
-    'second column': [10, 20, 30, 40]
+    'taken': ["ik bak pannenkoeken", "ik kom 's namiddags opstellen", "ik help bij verdelen na schooltijd"]    
     })
 
-option = st.selectbox(
-    'Which number do you like best?',
-     df['first column'])
+with st.form("my_form"):
 
-'You selected: ', option
+ option = st.selectbox(
+    'Hoe wil je helpen?',
+     df['taken'])
+
+'U koos: ', option
