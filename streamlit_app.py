@@ -16,7 +16,7 @@ with st.form("my_form"):
     'Hoe wil je helpen?',
      df['taken'])
 
- name = st.text_input('Uw naam', placeholder= 'Bob')
+  name = st.text_input('Uw naam', placeholder= 'Bob')
   st.form_submit_button('Klaar!')
 
 'U koos: ', option
