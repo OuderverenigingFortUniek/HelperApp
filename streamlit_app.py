@@ -3,8 +3,7 @@ import pandas as pd
  
 st.write("""
 # Helper App
-Hallo, wie wil er meewerken aan...
-
+Hallo, Wintersfeer 22/12 komt eraan!
 """)
 
 df = pd.DataFrame({
@@ -13,8 +12,11 @@ df = pd.DataFrame({
 
 with st.form("my_form"):
 
- option = st.selectbox(
+  option = st.selectbox(
     'Hoe wil je helpen?',
      df['taken'])
+
+ name = st.text_input('Uw naam', placeholder= 'Bob')
+  st.form_submit_button('Klaar!')
 
 'U koos: ', option
